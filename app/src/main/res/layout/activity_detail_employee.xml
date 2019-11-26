@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rellay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad">
+
+            <RelativeLayout
+                android:id="@+id/imgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle_border"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/potoEmployee"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="9dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:padding="3dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="@drawable/circle"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/nameEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgUser"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-light"
+                android:text="Reza"/>
+            <TextView
+                android:id="@+id/alamatEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEmployee"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/address"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:text="Bogor"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rellay"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/followersBg"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/genderEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="pria"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Gender"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/followingBg"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/statKawinEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="kawin"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Status Kawin"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linlay1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NIP"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/nipEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat Lahir"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tempLahirEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tangLahirEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gol Darah"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/goldarEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agama"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/agamaEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kewarganegaraan"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/kwgEmployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berlaku Hingga"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/blkHingga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat Buat"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tempBuat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Buat"
+                        android:textColor="@color/headings"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tangBuat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachriyareza@gmail.com"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#000000"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

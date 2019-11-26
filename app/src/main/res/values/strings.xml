@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Multi Inti Digital Bisnis</string>
+    <string name="login"> Login Karyawan</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>

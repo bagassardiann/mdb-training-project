@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_office"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"></ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/tvOfficeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hahahahahaha"
+                android:textStyle="bold"
+                android:textColor="@color/colorKaryawan"></TextView>
+
+            <TextView
+                android:id="@+id/tvOfficeAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hahahahahaha"
+                android:textColor="@color/colorKaryawan"></TextView>
+
+            <TextView
+                android:id="@+id/tvOfficePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hahahahahaha"
+                android:textColor="@color/colorKaryawan"></TextView>
+
+            <TextView
+                android:id="@+id/tvOfficeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hahahahahaha"
+                android:textColor="@color/colorKaryawan"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_splashscreen">
+
+    </Button>
+
+</LinearLayout>
